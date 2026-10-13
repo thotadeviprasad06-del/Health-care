@@ -1,0 +1,14 @@
+# Render Blueprint Configuration
+# Deploy backend automatically on Render (https://render.com)
+services:
+  - type: web
+    name: health-management-system-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    autoDeploy: true
+    healthCheckPath: /api/analytics/dashboard
+    envVars:
+      - key: PORT
+        value: 10000

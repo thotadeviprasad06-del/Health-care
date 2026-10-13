@@ -1,0 +1,18 @@
+{
+  "name": "health-management-system",
+  "version": "1.0.0",
+  "description": "Health Management System (HMS) - Hospital Operations & Clinical Management",
+  "main": "frontend/index.html",
+  "scripts": {
+    "dev": "mvn spring-boot:run",
+    "start": "java -jar target/health-management-system-1.0.0.jar",
+    "build": "mvn clean package -DskipTests"
+  },
+  "keywords": [
+    "healthcare",
+    "hospital-management",
+    "spring-boot"
+  ],
+  "author": "",
+  "license": "ISC"
+}
